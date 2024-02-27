@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(backpagge.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .room-section {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .room-section h2 {
+    text-align: center;
+  }
+  
+  .room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .room img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .room h3 {
+    margin: 0;
+  }
+  
+  .room p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .book-btn {
+    background-color: #48aeaa ;
+    color:#000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .book-btn a{
+    text-decoration: none;
+    color:#000;
+  }
+  .book-btn:hover {
+    background-color: #419797a8;
+    color:white ;
+    text-decoration: none;
+  }
+  .book-btn a:hover{
+    color:#fff
+  }
+  .service-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .about-section{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#bcdcdb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .about-section h2,
+  .service-section h2 {
+    text-align: center;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    margin: 0;
+  }
+  
+  .team-member p {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+  }
+  /* Header styles */
+header {
+  background-color: #f4f4f4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:nowrap;
+  flex-direction: row;
+}
+
+
+ul{
+  padding: 20PX 10PX;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  margin-right: 20px;
+  text-decoration: none;
+
+  color: #000; 
+  position: relative;
+  transition: color 0.3s;
+  
+}
+
+nav ul li :hover{
+  color: #419797a8;
+  text-decoration: none; /* Remove underline on hover */
+
+  
+}
+
+header nav ul li a:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  text-decoration: none; /* Remove underline on hover */
+
+}
+
+
+
+
+header nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+
+}
+
+header nav ul li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  text-decoration: none;
+
+}
+footer{
+  background-color:  #333;
+}
+.footercontainer{
+  width: 100%;
+  padding: 30px 10px 5px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a{
+  font-size: 2em;
+  color:  #333;
+  opacity: 0.9;
+}
+.socialIcons a:hover{
+  background-color: #6cd4d4;
+  transition: 0.5s;
+}
+.socialIcons a:hover{
+  color: white;
+  transition: 0.5s;
+}
+.footernav{
+  margin: 30px 0;
+}
+.footernav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+}
+.footernav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footernav ul li a:hover{
+  color: #6cd4d4;
+  transition: 0.5s;
+}
+.footernav p{ text-align: center;
+  color: white;
+  text-decoration: none;
+
+}
+.footernav p a:hover{
+  color:#6cd4d4
+  ;
+  transition: 0.5s;
+}
+.footerbuttom{
+  background-color: #48aeaa
+  ;
+  padding: 20px;
+  text-align: center;
+}
+.footerbuttom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+
+}
+@media (max-width:700px) {
+  .footernav ul{
+      flex-direction: column;
+  }
+  .footernav ul li{
+      width: 100%;
+      text-align: center;
+      margin:10px;
+  }
+  
+}
+
+  header nav ul li a {
+      font-size: 14px;
+  }
+
+  .content h2 {
+      font-size: 24px;
+  }
